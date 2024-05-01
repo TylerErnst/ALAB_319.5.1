@@ -2,7 +2,6 @@ import express from "express";
 import "dotenv/config";
 
 import db from "./db/conn.mjs";
-// import { ObjectId } from "mongodb";
 
 import Learner from './models/learner.mjs';
 import Grades from "./models/grades.mjs";
