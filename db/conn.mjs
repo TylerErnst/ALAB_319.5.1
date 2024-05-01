@@ -1,21 +1,6 @@
-// import express from 'express';
-// import { MongoClient } from 'mongodb';
 import mongoose from "mongoose";
 
-// const connectionString = process.env.ATLAS_URI || "";
-// const client = new MongoClient(connectionString);
 mongoose.connect(process.env.ATLAS_URI || "");
-
-
-// let conn;
-// try{
-//     conn = await client.connect();
-//     console.log('Connected to MongoDB');
-// } catch(err) {
-//     console.log(err)
-// }
-
-// let db = conn.db("sample_training");
 const db = mongoose.connection;
 
 
